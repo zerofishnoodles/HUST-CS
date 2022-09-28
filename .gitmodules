@@ -1,3 +1,6 @@
 [submodule "SoftwareEngineer"]
 	path = SoftwareEngineer
 	url = https://github.com/zerofishnoodles/mapick.git
+[submodule "SAT"]
+	path = SAT
+	url = https://github.com/zerofishnoodles/SAT.git
