@@ -1,0 +1,26 @@
+#define IDM_FILE_EXIT   10001
+#define IDM_FILE_LIST   10002
+#define IDM_FILE_CLEAR  10003
+#define IDM_HELP_ABOUT  10101
+#define IDM_ACTION_CompRate 10004
+#define IDM_ACTION_Sort 10005
+
+MyMenu  MENU
+BEGIN
+	POPUP "&File"
+  	BEGIN
+    		MENUITEM "L&ist", IDM_FILE_LIST
+    		MENUITEM "C&lear",IDM_FILE_CLEAR
+    		MENUITEM "E&xit", IDM_FILE_EXIT
+	END
+	POPUP "&Help"
+	BEGIN
+	    	MENUITEM "&About",IDM_HELP_ABOUT
+	END
+	POPUP "&Action"
+	BEGIN
+			MENUITEM "&Compute Rate", IDM_ACTION_CompRate
+			MENUITEM "&List Sort", IDM_ACTION_Sort
+			
+	END
+END

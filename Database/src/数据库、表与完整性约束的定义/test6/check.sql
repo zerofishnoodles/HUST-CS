@@ -1,0 +1,2 @@
+use MyDb;
+desc s;

@@ -1,0 +1,23 @@
+#! /bin/bash
+
+#----------  选择测试用例 ---------- 
+read -p '' choice
+
+#---------- 数据准备 ----------
+export MYSQL_PWD=123123
+mysql -h127.0.0.1 -uroot < src/step1/init$choice.sql 2>/dev/null
+
+#---------- 在学生代码中添加代码
+sed -i '7i insert into dept(name) values("SALES");' src/step1/test1.sql
+
+#---------- 运行学生代码 ---------- 
+#mysql -h127.0.0.1 -uroot < src/step1/test1.sql 2>/dev/null
+
+# ---------- 运行学生代码 ---------- 
+mysql -h127.0.0.1 -uroot << EDF
+source src/step1/test1.sql
+select @@transaction_isolation;
+select name from dept;
+
+EDF
+

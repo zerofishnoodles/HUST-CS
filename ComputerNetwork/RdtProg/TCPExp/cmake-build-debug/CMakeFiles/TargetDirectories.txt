@@ -1,0 +1,3 @@
+D:/Documents/course/junior/ComputerNetwork/RdtProg/TCPExp/cmake-build-debug/CMakeFiles/TCPExp.dir
+D:/Documents/course/junior/ComputerNetwork/RdtProg/TCPExp/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Documents/course/junior/ComputerNetwork/RdtProg/TCPExp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

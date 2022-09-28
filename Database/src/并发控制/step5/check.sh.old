@@ -1,0 +1,33 @@
+#! /bin/bash
+
+#----------  选择测试用例 ---------- 
+read -p '' choice
+
+#---------- 数据准备 ----------
+export MYSQL_PWD=123123
+mysql -h127.0.0.1 -uroot < src/step3/testdb$choice.sql 2>/dev/null
+ 
+#---------- 在学生代码中添加代码
+#echo 'select @@transaction_isolation;' >>src/step5/t1.sql 
+#echo 'select @@transaction_isolation;' >>src/step5/t2.sql 
+
+if [ $(cat src/step5/t1.sql  | grep -c "read uncommitted") -eq 0 ]; then 
+echo 't1.sql wrong isolation level setting!' 
+fi;
+
+if [ $(cat src/step5/t2.sql  | grep -c "read uncommitted") -eq 0 ]; then 
+echo 't2.sql wrong isolation level setting' 
+fi;
+
+#----------并发执行两个事务 ----------
+for ((i=1;i<=2;i++))
+do
+{
+  
+mysql -h127.0.0.1 -uroot < src/step5/t$i.sql
+
+ }&  
+ 
+done
+
+wait;

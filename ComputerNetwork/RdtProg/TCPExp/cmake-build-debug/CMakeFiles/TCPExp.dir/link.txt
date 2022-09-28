@@ -1,0 +1,3 @@
+"D:\Programs\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\TCPExp.dir/objects.a
+D:\Programs\mingw64\bin\ar.exe cr CMakeFiles\TCPExp.dir/objects.a @CMakeFiles\TCPExp.dir\objects1.rsp
+D:\Programs\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\TCPExp.dir/objects.a -Wl,--no-whole-archive  -o ..\bin\TCPExp.exe -Wl,--out-implib,..\bin\libTCPExp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TCPExp.dir\linklibs.rsp

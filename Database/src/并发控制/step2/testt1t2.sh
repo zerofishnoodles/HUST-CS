@@ -1,0 +1,1 @@
+ sh src/step2/testt1.sh& sh src/step2/testt2.sh& wait

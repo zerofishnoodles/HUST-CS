@@ -1,0 +1,17 @@
+﻿  config.cpp
+  global.cpp
+  httpParser.cpp
+D:\Documents\course\junior\ComputerNetwork\SocketProg\SocketProg\httpParser.cpp(9,1): warning C4005: “MAXBUF”: 宏重定义
+D:\Documents\course\junior\ComputerNetwork\SocketProg\SocketProg\httpParser.h(6): message : 参见“MAXBUF”的前一个定义
+D:\Documents\course\junior\ComputerNetwork\SocketProg\SocketProg\httpParser.cpp(28,29): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Documents\course\junior\ComputerNetwork\SocketProg\SocketProg\httpParser.cpp(32,36): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Documents\course\junior\ComputerNetwork\SocketProg\SocketProg\httpParser.cpp(41,32): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  SocketProg.cpp
+D:\Documents\course\junior\ComputerNetwork\SocketProg\SocketProg\SocketProg.cpp(15,1): warning C4326: “main”的返回类型应为“int”而非“void”
+D:\Documents\course\junior\ComputerNetwork\SocketProg\SocketProg\SocketProg.cpp(142,68): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Documents\course\junior\ComputerNetwork\SocketProg\SocketProg\SocketProg.cpp(30,19): warning C4101: “cliSocket”: 未引用的局部变量
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 403 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  SocketProg.vcxproj -> D:\Documents\course\junior\ComputerNetwork\SocketProg\x64\Release\SocketProg.exe

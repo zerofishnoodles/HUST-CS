@@ -1,0 +1,31 @@
+#! /bin/bash
+
+#----------  选择测试用例 ---------- 
+read -p '' choice
+
+#---------- 数据准备 ----------
+export MYSQL_PWD=123123
+mysql -h127.0.0.1 -uroot < src/step3/testdb$choice.sql 2>/dev/null
+
+#
+mysql -h127.0.0.1 -uroot << EDF
+use testdb1;
+select tickets from ticket where flight_no = 'CA8213';
+EDF
+
+#----------并发执行两个事务 ----------
+for ((i=1;i<=2;i++))
+do
+{
+  mysql -h127.0.0.1 -uroot < src/step3/t$i.sql
+    
+ }&  
+ 
+done
+
+wait;
+
+mysql -h127.0.0.1 -uroot << EDF
+use testdb1;
+select tickets from ticket where flight_no = 'CA8213';
+EDF
