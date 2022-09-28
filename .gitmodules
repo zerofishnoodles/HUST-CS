@@ -10,3 +10,6 @@
 [submodule "CompileSystem"]
 	path = CompileSystem
 	url = https://github.com/zerofishnoodles/Compiler.git
+[submodule "DataStructure"]
+	path = DataStructure
+	url = https://github.com/zerofishnoodles/data_structure.git
