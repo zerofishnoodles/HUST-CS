@@ -7,3 +7,6 @@
 [submodule "OperatingSystem"]
 	path = OperatingSystem
 	url = https://github.com/zerofishnoodles/riscv-pke.git
+[submodule "CompileSystem"]
+	path = CompileSystem
+	url = https://github.com/zerofishnoodles/Compiler.git
