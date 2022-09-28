@@ -4,3 +4,6 @@
 [submodule "SAT"]
 	path = SAT
 	url = https://github.com/zerofishnoodles/SAT.git
+[submodule "OperatingSystem"]
+	path = OperatingSystem
+	url = https://github.com/zerofishnoodles/riscv-pke.git
