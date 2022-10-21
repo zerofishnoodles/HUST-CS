@@ -1,2 +1,2 @@
 # HUST-CS
-This is a collection of my courses and projects in HUST
+This is a collection of my course labs and projects in HUST
