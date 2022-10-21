@@ -13,3 +13,6 @@
 [submodule "DataStructure"]
 	path = DataStructure
 	url = https://github.com/zerofishnoodles/data_structure.git
+[submodule "SystemAbilityPA"]
+	path = SystemAbilityPA
+	url = https://github.com/zerofishnoodles/NJU-PA.git
